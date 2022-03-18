@@ -185,6 +185,10 @@ function rebornlib:init(uiName)
     thisPlayerPicture.Image = content
     thisPlayerUsername.Text = "<b>" .. thisPlayer.Name .. "</b>"
     thisPlayerEmail.Text = thisPlayer.Name .. "@dohmnet.com"
+	
+	ExitButton.MouseButton1Click:Connect(function()
+			RebornUI:Destroy()
+		end)
 
     local MainLib = {}
     local currTab = ""
