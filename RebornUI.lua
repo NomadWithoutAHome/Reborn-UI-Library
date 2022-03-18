@@ -1,5 +1,9 @@
 local rebornlib = {}
 
+if game.CoreGui:FindFirstChild('RebornUI') then
+	game.CoreGui.RebornUI:Destroy()
+end
+
 function rebornlib:init(uiName)
     if uiName == nil then
         warn("Reborn UI Lib: no name given in :CreateMain()")
