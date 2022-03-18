@@ -36,7 +36,7 @@ function rebornlib:init(uiName)
     RebornMain.Size = UDim2.new(0, 425, 0, 272)
 
     RebornUI.Name = "RebornUI"
-    RebornUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+    RebornUI.Parent = game.CoreGui
 
     RebornMain.Name = "RebornMain"
     RebornMain.Parent = RebornUI
