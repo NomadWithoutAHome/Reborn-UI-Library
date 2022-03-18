@@ -773,7 +773,7 @@ function rebornlib:init(uiName)
             PhonixOptionTitle.Position = UDim2.new(0.164000005, -25, 0.177000001, 0)
             PhonixOptionTitle.Size = UDim2.new(0, 40, 0, 15)
             PhonixOptionTitle.Font = Enum.Font.RobotoMono
-            PhonixOptionTitle.Text = "<b>Theme</b>"
+            PhonixOptionTitle.Text = "<b>"..title.."</b>"
             PhonixOptionTitle.RichText = true
             PhonixOptionTitle.TextColor3 = Color3.fromRGB(246, 246, 246)
             PhonixOptionTitle.TextSize = 14.000
@@ -786,7 +786,7 @@ function rebornlib:init(uiName)
             PhonixOptionDescription.Position = UDim2.new(0.155000001, -23, 0.50999999, 0)
             PhonixOptionDescription.Size = UDim2.new(0, 100, 0, 13)
             PhonixOptionDescription.Font = Enum.Font.RobotoMono
-            PhonixOptionDescription.Text = "Choose color scheme"
+            PhonixOptionDescription.Text = description
             PhonixOptionDescription.RichText = true
             PhonixOptionDescription.TextColor3 = Color3.fromRGB(246, 246, 246)
             PhonixOptionDescription.TextSize = 11.000
@@ -811,7 +811,7 @@ function rebornlib:init(uiName)
             RebornDDButton.Size = UDim2.new(0, 85, 0, 23)
             RebornDDButton.AutoButtonColor = false
             RebornDDButton.Font = Enum.Font.RobotoMono
-            RebornDDButton.Text = "Select"
+            RebornDDButton.Text = btntext
             RebornDDButton.TextColor3 = Color3.fromRGB(246, 246, 246)
             RebornDDButton.TextSize = 12.000
             RebornDDButton.TextStrokeColor3 = Color3.fromRGB(246, 246, 246)
