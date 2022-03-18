@@ -326,7 +326,7 @@ function rebornlib:init(uiName)
             RebornTitle.Position = UDim2.new(0.135112867, 19, 0.176666945, 0)
             RebornTitle.Size = UDim2.new(0, 123, 0, 15)
             RebornTitle.Font = Enum.Font.RobotoMono
-            RebornTitle.Text = "<b>"title"</b>"
+            RebornTitle.Text = "<b>"..title.."</b>"
             RebornTitle.RichText = true
             RebornTitle.TextColor3 = Color3.fromRGB(246, 246, 246)
             RebornTitle.TextSize = 14.000
