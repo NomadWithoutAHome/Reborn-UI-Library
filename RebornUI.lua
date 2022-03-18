@@ -1,7 +1,7 @@
 local rebornlib = {}
 
-if game.CoreGui:FindFirstChild('RebornUI') then
-	game.CoreGui.RebornUI:Destroy()
+if game.CoreGui:FindFirstChild("RebornUI") then
+    game.CoreGui.RebornUI:Destroy()
 end
 
 function rebornlib:init(uiName)
@@ -185,14 +185,19 @@ function rebornlib:init(uiName)
     thisPlayerPicture.Image = content
     thisPlayerUsername.Text = "<b>" .. thisPlayer.Name .. "</b>"
     thisPlayerEmail.Text = thisPlayer.Name .. "@dohmnet.com"
-	
-	ExitButton.MouseButton1Click:Connect(function()
-			RebornUI:Destroy()
-		end)
+
+    ExitButton.MouseButton1Click:Connect(
+        function()
+            RebornUI:Destroy()
+        end
+    )
 
     local MainLib = {}
     local currTab = ""
     local ft = false
+
+    RebornMain.Active = true
+    RebornMain.Draggable = true
 
     function MainLib:Tab(name)
         local Tab = Instance.new("TextButton")
@@ -271,6 +276,7 @@ function rebornlib:init(uiName)
                 end
                 Tab.RebornLine.Visible = true
                 Tab.BackgroundColor3 = Color3.fromRGB(57, 60, 67)
+                RebornPageTitle.Text = "<b>" .. Tab.Text .. "</b>"
             end
         )
 
@@ -547,6 +553,7 @@ function rebornlib:init(uiName)
                             )
                             sliderFill.Size =
                                 UDim2.new(0, math.clamp(mouse.X - sliderFill.AbsolutePosition.X, 0, 70), 0, 8)
+                            --sliderCount.Position = UDim2.new(0, math.clamp(mouse.X - sliderFill.AbsolutePosition.X, 0, 70), 0, 8)
                         end
                     )
                     releaseconnection =
@@ -565,6 +572,7 @@ function rebornlib:init(uiName)
                                 )
                                 sliderFill.Size =
                                     UDim2.new(0, math.clamp(mouse.X - sliderFill.AbsolutePosition.X, 0, 70), 0, 8)
+                                --sliderCount.Position = UDim2.new(0, math.clamp(mouse.X - sliderFill.AbsolutePosition.X, 0, 70), 0, 8)
                                 moveconnection:Disconnect()
                                 releaseconnection:Disconnect()
                             end
@@ -881,6 +889,7 @@ function rebornlib:init(uiName)
             function DropFunc:Value()
                 return RebornDDButton.Text
             end
+
             return DropFunc
         end
         return TabElements
