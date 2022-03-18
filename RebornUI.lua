@@ -122,7 +122,7 @@ function rebornlib:init(uiName)
     RebornTitle.Position = UDim2.new(0.0407331996, 11, 0.0207100585, 0)
     RebornTitle.Size = UDim2.new(0, 67, 0, 13)
     RebornTitle.Font = Enum.Font.RobotoMono
-    RebornTitle.Text = "<b>Reborn UI</b>"
+    RebornTitle.Text = "<b>"uiName"</b>"
     RebornTitle.RichText = true
     RebornTitle.TextColor3 = Color3.fromRGB(246, 246, 246)
     RebornTitle.TextSize = 11.000
@@ -326,7 +326,7 @@ function rebornlib:init(uiName)
             RebornTitle.Position = UDim2.new(0.135112867, 19, 0.176666945, 0)
             RebornTitle.Size = UDim2.new(0, 123, 0, 15)
             RebornTitle.Font = Enum.Font.RobotoMono
-            RebornTitle.Text = "<b>Snowman Simulator</b>"
+            RebornTitle.Text = "<b>"title"</b>"
             RebornTitle.RichText = true
             RebornTitle.TextColor3 = Color3.fromRGB(246, 246, 246)
             RebornTitle.TextSize = 14.000
@@ -338,7 +338,7 @@ function rebornlib:init(uiName)
             RebornTitleDescription.Position = UDim2.new(0.164239034, 8, 0.509598792, 0)
             RebornTitleDescription.Size = UDim2.new(0, 137, 0, 13)
             RebornTitleDescription.Font = Enum.Font.RobotoMono
-            RebornTitleDescription.Text = "A script made by DohmBoyOG"
+            RebornTitleDescription.Text = description
             RebornTitleDescription.RichText = true
             RebornTitleDescription.TextColor3 = Color3.fromRGB(246, 246, 246)
             RebornTitleDescription.TextSize = 11.000
